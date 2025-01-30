@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddProperty = (props) => {
+const AddProperty = (addPropertyToList) => {
   const [owner, setOwner] = useState("");
   const [price, setPrice] = useState("");
   const [contact, setContact] = useState("");
@@ -14,7 +14,7 @@ const AddProperty = (props) => {
       alert("All fields are required!");
       return;
     }
-    props.addPropertyToList(owner,price,contact,status,image)
+    addPropertyToList(owner,price,contact,status,image)
     const propertyData = { owner, price, contact, status, image };
 
     try {
