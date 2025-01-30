@@ -14,7 +14,7 @@ const AddProperty = () => {
       alert("All fields are required!");
       return;
     }
-
+    props.addPropertyToList(owner,price,contact,status,image)
     const propertyData = { owner, price, contact, status, image };
 
     try {
