@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddProperty = () => {
+const AddProperty = (props) => {
   const [owner, setOwner] = useState("");
   const [price, setPrice] = useState("");
   const [contact, setContact] = useState("");
