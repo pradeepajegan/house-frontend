@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddProperty = (addPropertyToList) => {
+const AddProperty = ({addPropertyToList}) => {
   const [owner, setOwner] = useState("");
   const [price, setPrice] = useState("");
   const [contact, setContact] = useState("");
